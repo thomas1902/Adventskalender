@@ -25,8 +25,16 @@ def prioritySearch():
         liste = []
         for item in ausgabe:
             item = item.replace('\n','')
-            print(item)
-            #hallowelt
+            liste.append(item)
+
+        marker = 0
+        for word in liste[marker:marker+3]:
+            print(word)
+            if word == liste[marker+2]:
+                print(word)
+
+
+
 
 
 prioritySearch()
