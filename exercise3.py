@@ -27,11 +27,31 @@ def prioritySearch():
             item = item.replace('\n','')
             liste.append(item)
 
-        marker = 0
-        for word in liste[marker:marker+3]:
-            print(word)
-            if word == liste[marker+2]:
-                print(word)
+        newList = []
+        for word in liste:
+            newList.append(word)
+            if (liste.index(word)+1)%3 == 0:
+                newList.append('\n')
+        temporaryList = []
+        for newWord in newList:
+            if newWord == '\n':
+                for letter in Alphabet:
+                    if letter in temporaryList[0] and letter in temporaryList[1] and letter in temporaryList[2]:
+                        counter += Alphabet.index(letter)+1
+                temporaryList = []
+                continue
+            if newWord != '\n':
+                temporaryList.append(newWord)
+        print(counter)
+
+
+
+
+
+
+
+
+
 
 
 
