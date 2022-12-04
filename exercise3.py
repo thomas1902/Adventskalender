@@ -25,7 +25,8 @@ def prioritySearch():
         liste = []
         for item in ausgabe:
             item = item.replace('\n','')
-            list.append(item)
+            print(item)
+            #hallowelt
 
 
 prioritySearch()
