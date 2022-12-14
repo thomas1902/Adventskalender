@@ -53,6 +53,7 @@ def supplyStacks():
                     newCurrentList.remove(word)
                 dictonary[listeZahl[2]] = newSecondList
                 dictonary[listeZahl[1]] = newCurrentList
+    print('sulution exercise5.1:', dictonary)
 supplyStacks()
 
 def supplyStacks2():
@@ -110,4 +111,5 @@ def supplyStacks2():
                     newCurrentList.remove(word)
                 dictonary[listeZahl[2]] = newSecondList
                 dictonary[listeZahl[1]] = newCurrentList
+    print('sulution exercise5.2:',dictonary)
 supplyStacks2()
