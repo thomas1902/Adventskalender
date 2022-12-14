@@ -1,5 +1,5 @@
 def findNumbersContainsInOther():
-    with open('exersise4') as f:
+    with open('exercise4') as f:
         ausgabe = f.readlines()
         counter = 0
         for item in ausgabe:
@@ -16,3 +16,6 @@ def findNumbersContainsInOther():
     print(counter)
 
 findNumbersContainsInOther()
+
+
+
