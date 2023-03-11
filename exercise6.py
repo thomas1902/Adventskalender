@@ -61,6 +61,5 @@ def tuningTroublePartTwo():
                         break
                     del (liste[0])
 
-
 tuningTrouble()
 tuningTroublePartTwo()
